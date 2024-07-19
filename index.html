@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contac Form</title>
+  <!--tmplt style from link https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css-->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="style.css">
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" crossorigin="anonymous">
+
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+</head>
+<body>
+   
+  
+    
+    
+     <div class="container px-5 py-8 mx-auto"> 
+    <div class="flex flex-col text-center w-full mb-12"> 
+    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-90">
+              Taqwiemun Nayrein
+            </h1> 
+   <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+     Perhitungan hisab sulamunayrein tahun hijriyah
+            </p>
+            </div>
+     <div class="lg:w-1/3 w-full mx-auto px-8">  
+    <div class="relative flex-grow w-full"> 
+          
+    <!-- Alamah sinin majmuah -->
+    <div class="custom-select">
+         <select name="languages" id="tahunmajmuah">
+        <option value="0">Sinin Majmu'ah :</option> 
+        <option value="1410">1410</option>
+        <option value="1420">1420</option>
+        <option value="1430">1430</option>
+        <option value="1440">1440</option>
+        <option value="1450">1450</option>
+        <option value="1460">1460</option>
+        <option value="1470">1470</option>
+        <option value="1480">1480</option>
+        <option value="1490">1490</option>
+        <option value="1500">1500</option>
+      </select>
+    </div>
+    <!-- Alamah Sinin Mabsutoh -->
+    
+    <div class="custom-select"> 
+         <select name="languages" id="tahunmabsutoh">
+           <option value="0">Sinin Mabsutoh :</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      </div>
+      
+           <!-- Bulan Hijriyah -->
+           
+       
+       <div class="custom-select"> 
+         <select name="languages" id="bulanhijriyah">
+           <option value="0">Bulan :</option>
+        <option value="1">Muharom</option>
+        <option value="2">Sopar</option>
+        <option value="3">Robi'ul Awal</option>
+        <option value="4">Robi'ust Stani</option>
+        <option value="5">Jumadil Awal</option>
+        <option value="6">Jumadist Stani</option>
+        <option value="7">Rojab</option>
+        <option value="8">Sya'ban</option>
+        <option value="9">Romadhon</option>
+        <option value="10">Syawal</option>
+        <option value="11">Dzul Qo'dah</option>
+        <option value="12">Dzul Hijjah</option>
+      </select>
+       </div>
+
+                <!-- Lokasi -->
+               
+       
+        <div class="custom-select">
+         <select name="languages" id="lokasitempat">
+           <option value="0">Lokasi :</option>
+        <option value="1">Tangerang</option>
+        <option value="2">Cianjur</option>
+        <option value="3">Jakarta</option>
+   </select>
+   </div>
+   
+                 <!-- Derajat -->
+                 
+      
+               <div class="custom-select">
+         <select name="languages" id="derajatirtipa" >
+        <option value="0">Irtipa :</option>
+        <option value="1">Irtipa 2°</option>
+        <option value="2">Irtipa 3°</option>
+        <option value="3">Irtipa 6°</option>
+        <option value="4">Irtipa 7°</option>     
+          
+   </select>  
+         </div>
+         
+         <!-- Hasil -->
+       
+       <button type="button" value="Hitung" 
+       onclick="calculate1()"
+      class="hs" > 
+       HASIL
+       </button>
+       <!--mt-4 w-full text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg w-f
+        <!-- Hitung -->
+       
+       <button type="button" value="Hitung" 
+       onclick="calculate2()"
+      class="hs" > 
+       HITUNG
+       </button>
+      
+      
+       
+     	<p class="p-hasil" id="showdata1"></p>        	 	  	 
+		<p class="p-hasil" id="showdata"></p> 
+    </form>
+           </div>
+        </div>
+     </div>
+  </div>
+  </section>
+
+
+      <script src="main.js"></script>    
+        <script src="main2.js"></script>
+        <script src="main3.js"></script>
+
+</body>
+
+</html>

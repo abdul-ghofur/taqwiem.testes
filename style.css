@@ -1,0 +1,118 @@
+
+body {
+  background-color: #212529;
+  color: #b4bec2;
+}
+
+.w-f {
+  width: 152px;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*sembunyikan elemen SELECT asli: */
+}
+
+.select-selected {
+  background-color: #b4bec2;
+  margin-top: 10px;
+}
+
+/* Style panah di dalam elemen pilih: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #1a1b1c transparent transparent transparent;
+}
+
+/* Arahkan panah ke atas saat kotak pilih terbuka (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #1a1b1c transparent;
+  top: 7px;
+}
+
+/* style item (opsi), termasuk item yang dipilih: */
+.select-items div,.select-selected {
+  color: #1a1b1c;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style item (opsi): */
+.select-items {
+  position: absolute;
+  background-color: #b4bec2;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Sembunyikan item ketika kotak pilih ditutup: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Bagian Hasil */
+.p-hasil {
+  color: #b4bec2;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.hs {
+  margin-top: 10px;
+  background: rgb(239 68 68);
+  width: 49.7%;
+  color: white;
+  border-width: 0px;
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+  padding-left: 2rem; 
+  padding-right: 2rem; 
+  border-radius: 0.25rem; 
+  font-size: 1.125rem; 
+  line-height: 1.75rem; 
+}
+.hs:hover {
+  background-color: rgb(220 38 38);
+}
+.hs:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media only screen and (max-width: 700px) {
+  .hs {
+    width: 49.3%;
+  }
+}
+
+.ft {
+  padding-top: 1rem; 
+  padding-bottom: 1rem;
+}
+.ft {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
